@@ -10,9 +10,10 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 
-<!-- Custom CSS -->
+<!-- Custom CSS --><!-- 
 <link rel="stylesheet" href="${pageContext.request.contextPath}/Component/style.css" />
-
+-->
+<link rel="stylesheet" href="${pageContext.request.contextPath}/Component/styleBookAppointment.css" />
 <!-- Bootstrap Select (check path) -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.18/dist/css/bootstrap-select.min.css" />
 
