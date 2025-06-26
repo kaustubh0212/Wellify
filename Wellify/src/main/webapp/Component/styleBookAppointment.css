@@ -1,0 +1,112 @@
+/* bookAppointment.jsp */
+
+/* Background and container */
+.appointment-bg {
+    /*background: #96FCD0;*/
+    min-height: 100vh;
+}
+
+.appointment-container {
+    background: #fff;
+    border-radius: 0;
+    box-shadow: 0 0 32px rgba(150,252,208,0.13);
+    /* Remove or set margins to 0 */
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+/* Form section */
+.appointment-form-section {
+    background: #fff;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    min-height: 600px;
+    box-shadow: 2px 0 8px rgba(150,252,208,0.08);
+}
+
+/* Heading and back button */
+.appointment-heading {
+    color: #31a67a;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.back-btn {
+    background: #96FCD0;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    font-size: 1.2rem;
+    transition: background 0.2s;
+}
+
+.back-btn:hover {
+    background: #31a67a;
+    color: #fff;
+}
+
+/* Form styling */
+.appointment-form .form-control {
+    border-radius: 8px;
+    border: 1px solid #96FCD0;
+}
+
+.appointment-form label {
+    font-weight: 500;
+    color: #31a67a;
+}
+
+.appointment-submit-btn {
+    background: #96FCD0;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    transition: background 0.2s;
+}
+
+.appointment-submit-btn:hover {
+    background: #31a67a;
+    color: #fff;
+}
+
+/* Image section */
+/* Adjust image section to fill the right portion fully */
+.appointment-image-section {
+    /*background: #96FCD0;*/
+    background: white;
+    border-radius: 0 !important;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0;
+    overflow: hidden; /* Prevents the image from overflowing the section */
+}
+
+.appointment-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 !important;
+    box-shadow: 0 0 24px rgba(49,166,122,0.09);
+    border: none;
+    /* Prevent the image from growing bigger than its natural size */
+    max-width: 600px;   /* Set to your image's natural width or desired max */
+    max-height: 600px;  /* Set to your image's natural height or desired max */
+}
+@media (max-width: 991.98px) {
+    .appointment-image-section {
+        min-height: 300px;
+    }
+    .appointment-image {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+    }
+}

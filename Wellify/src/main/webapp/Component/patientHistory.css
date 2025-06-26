@@ -1,0 +1,178 @@
+body {
+    background: #f5f7fa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.history-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 16px;
+}
+.history-title {
+    text-align: center;
+    color: #2b7a78;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+.no-appointments {
+    text-align: center;
+    color: #888;
+    font-size: 1.2rem;
+    margin-top: 40px;
+}
+.cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+.history-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(43, 122, 120, 0.08);
+    padding: 24px 28px 18px 28px;
+    width: 340px;
+    min-width: 260px;
+    max-width: 95vw;
+    margin-bottom: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow 0.2s;
+    position: relative;
+}
+.history-card:hover {
+    box-shadow: 0 8px 32px rgba(43, 122, 120, 0.15);
+}
+.card-header {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #17252a;
+    margin-bottom: 8px;
+}
+.doctor-name {
+    color: #3aafa9;
+}
+.card-row {
+    margin-bottom: 7px;
+    font-size: 1.04rem;
+}
+.card-label {
+    font-weight: 600;
+    color: #3aafa9;
+    margin-right: 7px;
+}
+.card-status {
+    font-weight: bold;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.98rem;
+    display: inline-block;
+}
+.status-completed {
+    background: #def7ec;
+    color: #36b37e;
+    border: 1px solid #36b37e;
+}
+.status-cancelled {
+    background: #fff0f0;
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
+}
+.status-pending {
+    background: #fdf6e3;
+    color: #e1a200;
+    border: 1px solid #e1a200;
+}
+
+.cancel-btn,
+.prescription-btn {
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 12px 0;
+    border: none;
+    border-radius: 24px;
+    font-size: 1.08rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(43, 122, 120, 0.10);
+    transition: background 0.22s, color 0.22s, box-shadow 0.18s, transform 0.18s;
+    outline: none;
+    cursor: pointer;
+    margin-top: 18px;
+    margin-bottom: 6px;
+}
+
+.cancel-btn {
+    background: linear-gradient(90deg, #ff5858 0%, #ff7e5f 100%);
+    color: #fff;
+    border: 1.5px solid #ff5858;
+    box-shadow: 0 3px 12px rgba(255,88,88,0.12);
+}
+
+.cancel-btn:hover, .cancel-btn:focus {
+    background: linear-gradient(90deg, #ff7e5f 0%, #ff5858 100%);
+    color: #fff;
+    box-shadow: 0 6px 18px rgba(255,88,88,0.18);
+    transform: translateY(-2px) scale(1.03);
+}
+
+.prescription-btn {
+    background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+    color: #fff;
+    border: 1.5px solid #43cea2;
+    box-shadow: 0 3px 12px rgba(67,206,162,0.10);
+}
+
+.prescription-btn:hover, .prescription-btn:focus {
+    background: linear-gradient(90deg, #185a9d 0%, #43cea2 100%);
+    color: #fff;
+    box-shadow: 0 6px 18px rgba(67,206,162,0.16);
+    transform: translateY(-2px) scale(1.03);
+}
+
+
+@media (max-width: 800px) {
+    .cards-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+    .history-card {
+        width: 96vw;
+        min-width: unset;
+        padding: 18px 10px 14px 16px;
+    }
+}
+
+/* Toast notification styles */
+.toast {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 30px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s, top 0.3s;
+}
+
+.toast.show {
+    opacity: 1;
+    top: 30px;
+}
+
+.toast.success {
+    background: #36b37e;
+}
+
+.toast.error {
+    background: #e74c3c;
+}

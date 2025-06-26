@@ -1,0 +1,125 @@
+/* Overlay background */
+.prescription-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+/* Prescription container */
+.prescription-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 700px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+    padding: 30px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: #e74c3c;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.close-btn:hover {
+    color: #c0392b;
+}
+
+/* Header styles */
+.prescription-header {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3aafa9;
+    padding-bottom: 15px;
+}
+
+.prescription-header h2 {
+    color: #2b7a78;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+/* Body styles */
+.prescription-body {
+    padding: 10px 5px;
+}
+
+.prescription-detail {
+    display: flex;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+.detail-label {
+    font-weight: 600;
+    color: #3aafa9;
+    width: 160px;
+    margin-right: 15px;
+}
+
+.detail-value {
+    color: #17252a;
+    flex: 1;
+}
+
+/* Medication section */
+.prescription-content {
+    margin-top: 25px;
+    border-top: 1px dashed #ccc;
+    padding-top: 20px;
+}
+
+.medication-label {
+    font-weight: 600;
+    color: #3aafa9;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.medication-text {
+    white-space: pre-wrap;
+    line-height: 1.6;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #3aafa9;
+    font-size: 1.1rem;
+}
+
+/* Signature section */
+.signature-section {
+    margin-top: 30px;
+    text-align: right;
+    padding-top: 20px;
+    border-top: 1px dashed #ccc;
+}
+
+.doctor-signature {
+    font-weight: 600;
+    color: #2b7a78;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.signature-date {
+    color: #555;
+    font-size: 0.95rem;
+}

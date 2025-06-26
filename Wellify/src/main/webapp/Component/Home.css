@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7fafc;
+    min-height: 100vh;
+}
+
+.home-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 0;
+    background: #f7fafc;
+}
+
+.home-image-block {
+    flex: 1 1 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 320px;
+    max-width: 700px;
+}
+
+.home-image {
+    width: 100%;
+    max-width: 600px;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(67,206,162,0.12);
+    background: #e0f7fa;
+    transition: filter 0.25s;
+}
+
+.home-image-block:hover .home-image {
+    filter: brightness(1.04) saturate(1.12);
+}
+
+.home-content-block {
+    flex: 1 1 400px;
+    max-width: 480px;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.home-title {
+    font-size: 2.5rem;
+    color: #185a9d;
+    margin: 0 0 18px 0;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.brand {
+    color: #43cea2;
+    font-weight: 900;
+}
+
+.home-quote {
+    font-size: 1.18rem;
+    color: #2b7a78;
+    margin-bottom: 34px;
+    line-height: 1.6;
+    font-weight: 500;
+    background: none;
+    border: none;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 15px 44px;
+    border-radius: 26px;
+    background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+    color: #fff;
+    font-size: 1.18rem;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 18px rgba(43,122,120,0.13);
+    transition: background 0.22s, transform 0.16s, box-shadow 0.16s;
+    border: none;
+    outline: none;
+}
+.cta-btn:hover, .cta-btn:focus {
+    background: linear-gradient(90deg, #185a9d 0%, #43cea2 100%);
+    transform: translateY(-2px) scale(1.05);
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(43,122,120,0.18);
+}
+
+@media (max-width: 1050px) {
+    .home-main {
+        flex-direction: column;
+        min-height: 100vh;
+        padding: 0;
+    }
+    .home-image-block {
+        max-width: 98vw;
+        margin-bottom: 26px;
+    }
+    .home-content-block {
+        align-items: center;
+        text-align: center;
+        padding: 0 8vw;
+    }
+}
+
+@media (max-width: 700px) {
+    .home-content-block {
+        padding: 0 4vw;
+    }
+    .home-title {
+        font-size: 1.6rem;
+    }
+    .home-image {
+        max-height: 180px;
+    }
+    .cta-btn {
+        padding: 13px 24px;
+        font-size: 1rem;
+    }
+}

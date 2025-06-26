@@ -1,0 +1,124 @@
+body {
+    background: #f5f7fa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.history-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 16px;
+}
+.history-title {
+    text-align: center;
+    color: #2b7a78;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+.no-appointments {
+    text-align: center;
+    color: #888;
+    font-size: 1.2rem;
+    margin-top: 40px;
+}
+.cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+.history-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(43, 122, 120, 0.08);
+    padding: 24px 28px 18px 28px;
+    width: 340px;
+    min-width: 260px;
+    max-width: 95vw;
+    margin-bottom: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow 0.2s;
+    position: relative;
+}
+.history-card:hover {
+    box-shadow: 0 8px 32px rgba(43, 122, 120, 0.15);
+}
+.card-header {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #17252a;
+    margin-bottom: 8px;
+}
+.patient-name {
+    color: #3aafa9;
+}
+.card-row {
+    margin-bottom: 7px;
+    font-size: 1.04rem;
+}
+.card-label {
+    font-weight: 600;
+    color: #3aafa9;
+    margin-right: 7px;
+}
+.card-status {
+    font-weight: bold;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.98rem;
+    display: inline-block;
+}
+.status-completed {
+    background: #def7ec;
+    color: #36b37e;
+    border: 1px solid #36b37e;
+}
+.status-cancelled {
+    background: #fff0f0;
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
+}
+.status-pending {
+    background: #fdf6e3;
+    color: #e1a200;
+    border: 1px solid #e1a200;
+}
+.action-btn {
+    border: none;
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 14px;
+    transition: background 0.2s;
+}
+.prescribe-btn {
+    background: #3aafa9;
+    color: #fff;
+}
+.prescribe-btn:hover {
+    background: #2b7a78;
+}
+.prescription-btn {
+    background: #36b37e;
+    color: #fff;
+}
+.prescription-btn:hover {
+    background: #24925a;
+}
+@media (max-width: 800px) {
+    .cards-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+    .history-card {
+        width: 96vw;
+        min-width: unset;
+        padding: 18px 10px 14px 16px;
+    }
+}

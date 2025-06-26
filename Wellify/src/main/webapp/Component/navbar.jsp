@@ -4,6 +4,7 @@
 <%@ page import="domain.patient"%>
 <%@ page import="domain.doctor"%>
 
+
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
 	<div class="container">
@@ -19,10 +20,12 @@
 		<div class="collapse navbar-collapse justify-content-center"
 			id="wellifyNavbar">
 			<ul class="navbar-nav mx-auto">
-				<li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
-				<li class="nav-item active"><a class="nav-link" href="#services">Services</a></li>
-				<li class="nav-item active"><a class="nav-link" href="#about">About Us</a></li>
+				<li class="nav-item active"><a class="nav-link" href="Home.jsp">Home</a></li>
+				<li class="nav-item active"><a class="nav-link" href="Services.jsp">Services</a></li>
+				<li class="nav-item active"><a class="nav-link" href="AboutUs.jsp">About Us</a></li>
+				<!--
 				<li class="nav-item active"><a class="nav-link" href="#contact">Contact</a></li>
+				-->
 			</ul>
 			<!-- Right: Login/Register -->
 			<ul class="navbar-nav ml-auto">
@@ -36,7 +39,7 @@
 				%>
 
 				<li class="nav-item active mr-2"><a class="nav-link" href="bookAppointment.jsp">Book Appointment</a></li>
-				<li class="nav-item active mr-2"><a class="nav-link" href="viewAppointment.jsp">History</a></li>
+				<li class="nav-item active mr-2"><a class="nav-link" href="viewAppointment">History</a></li>
 				<li class="nav-item"><a class="btn btn-light text-black" href="logout">Logout</a></li>
 
 				<%
@@ -46,7 +49,7 @@
 					doctor p = (doctor) session.getAttribute("d");
 				%>
 				
-				<li class="nav-item active mr-2"><a class="nav-link" href="currentAppointment.jsp">Current Appointments</a></li>
+				<li class="nav-item active mr-2"><a class="nav-link" href="viewPatient">Appointments</a></li>
 				<li class="nav-item"><a class="btn btn-light text-black" href="${pageContext.request.contextPath}/logout">Logout</a></li>
 				
 				<%
@@ -58,7 +61,7 @@
 					session.removeAttribute("isLogin");
 				%>
 				
-				<li class="nav-item"><a class="btn btn-outline-light mr-2" href="login.jsp">Login</a></li>
+				<li class="nav-item"><a class="btn btn-outline-light mr-2" href="${pageContext.request.contextPath}/login.jsp">Login</a></li>
 				<li class="nav-item"><a class="btn btn-light text-black" href="${pageContext.request.contextPath}/register.jsp">Register</a></li>
 				
 				<%

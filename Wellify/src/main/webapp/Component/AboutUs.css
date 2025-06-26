@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7fafc;
+    min-height: 100vh;
+}
+
+.about-hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #e8f6f3;
+    padding: 60px 0 40px 0;
+    gap: 50px;
+    box-sizing: border-box;
+}
+
+.about-hero-content {
+    flex: 1 1 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 4vw;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    color: #185a9d;
+    font-weight: 800;
+    margin: 0 0 16px 0;
+    letter-spacing: 1px;
+}
+
+.brand {
+    color: #43cea2;
+    font-weight: 900;
+}
+
+.about-tagline {
+    font-size: 1.3rem;
+    color: #2b7a78;
+    margin-bottom: 0;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.about-hero-img {
+    flex: 1 1 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 4vw;
+}
+
+.about-hero-img img {
+    width: 100%;
+    max-width: 420px;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(67,206,162,0.14);
+    background: #e0f7fa;
+}
+
+.about-main {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 48px 18px 32px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.about-mission h2,
+.about-values h2,
+.about-cta h2 {
+    color: #185a9d;
+    font-size: 1.45rem;
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.about-mission p {
+    color: #2b7a78;
+    font-size: 1.08rem;
+    text-align: center;
+    margin-bottom: 36px;
+    margin-top: 0;
+}
+
+.about-values-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 42px;
+}
+
+.about-value-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(43, 122, 120, 0.10);
+    padding: 32px 24px 28px 24px;
+    width: 260px;
+    min-width: 180px;
+    max-width: 96vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.18s, transform 0.18s;
+    position: relative;
+}
+
+.about-value-card:hover {
+    box-shadow: 0 8px 32px rgba(67,206,162,0.13);
+    transform: translateY(-6px) scale(1.03);
+}
+
+.about-value-icon {
+    font-size: 2.3rem;
+    margin-bottom: 16px;
+    color: #43cea2;
+    background: #e0f7fa;
+    border-radius: 50%;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(67,206,162,0.10);
+}
+
+.about-value-card h3 {
+    font-size: 1.12rem;
+    color: #185a9d;
+    font-weight: 700;
+    margin: 0 0 9px 0;
+    text-align: center;
+}
+
+.about-value-card p {
+    color: #2b7a78;
+    font-size: 0.98rem;
+    text-align: center;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.about-cta {
+    margin-top: 36px;
+    text-align: center;
+}
+
+.about-cta p {
+    color: #2b7a78;
+    font-size: 1.08rem;
+    margin-bottom: 18px;
+    margin-top: 0;
+}
+
+.about-btn {
+    display: inline-block;
+    padding: 13px 38px;
+    border-radius: 26px;
+    background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+    color: #fff;
+    font-size: 1.08rem;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 18px rgba(43,122,120,0.13);
+    transition: background 0.22s, transform 0.16s, box-shadow 0.16s;
+    border: none;
+    outline: none;
+}
+.about-btn:hover, .about-btn:focus {
+    background: linear-gradient(90deg, #185a9d 0%, #43cea2 100%);
+    transform: translateY(-2px) scale(1.05);
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(43,122,120,0.18);
+}
+
+@media (max-width: 950px) {
+    .about-hero {
+        flex-direction: column-reverse;
+        gap: 28px;
+        padding: 38px 0 18px 0;
+    }
+    .about-hero-content,
+    .about-hero-img {
+        padding: 0;
+        align-items: center;
+        text-align: center;
+    }
+    .about-hero-img img {
+        max-width: 90vw;
+        max-height: 200px;
+    }
+    .about-values-cards {
+        gap: 18px;
+    }
+    .about-main {
+        padding: 24px 4vw 18px 4vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-title {
+        font-size: 1.4rem;
+    }
+    .about-value-card {
+        width: 96vw;
+        min-width: unset;
+        padding: 14px 4vw 14px 4vw;
+    }
+}
