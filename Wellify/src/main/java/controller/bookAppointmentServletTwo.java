@@ -43,18 +43,22 @@ public class bookAppointmentServletTwo extends HttpServlet {
         
         
         serviceBookingImplementation sbi = new serviceBookingImplementation();
-        boolean f = sbi.serviceBookAppointment(disease, doctorId, patientId, time, date, symptom, history);
+        int f = sbi.serviceBookAppointment(disease, doctorId, patientId, time, date, symptom, history);
         
         //req.getRequestDispatcher("bookAppointment.jsp").forward(req, res);
         
-        if(f)
+        if(f == 1)
         {
         	req.setAttribute("success", "Your appointment has been booked successfully!");
         }
-        else
+        else if(f == -1)
         {
         	req.setAttribute("error", "Appointment could not be booked. Please try again.");
 		}
+        else if(f== -2)
+        {
+        	req.setAttribute("error", "Appointment already exist at choosen booking time slot and date");
+        }
         
         req.getRequestDispatcher("/Component/bookAppointmentForm2.jsp").forward(req, res);
         

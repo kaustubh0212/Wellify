@@ -9,19 +9,6 @@
 </head>
 <body>
     <%@include file = "/Component/navbar.jsp"%>
-    <!-- 
-    <section class="about-hero">
-        <div class="about-hero-content">
-            <h1 class="about-title">About <span class="brand">Wellify</span></h1>
-            <p class="about-tagline">
-                Connecting patients and doctors for a healthier tomorrow.
-            </p>
-        </div>
-        <div class="about-hero-img">
-            <img src="${pageContext.request.contextPath}/image/about_team.jpg" alt="Wellify Team" />
-        </div>
-    </section>
-    -->
     <section class="about-main">
         <div class="about-mission">
             <h2>Our Mission</h2>

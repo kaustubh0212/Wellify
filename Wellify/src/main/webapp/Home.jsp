@@ -18,7 +18,6 @@
             <a href="bookAppointment.jsp" class="cta-btn">Book Appointment</a>
         </div>
         <div class="home-image-block">
-            <!-- Replace the src below with your own image path -->
             <img src="${pageContext.request.contextPath}/image/team.jpg" alt="Healthcare Team" class="home-image">
         </div>
     </div>

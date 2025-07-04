@@ -27,7 +27,6 @@ public class daoUserImplement implements daoUserInterface {
 		System.out.println("inside daoRegisterPatient()");
 		boolean f = false;
 		
-		//dbConnect db = new dbConnect();
 		Connection con = db.getConn();
 		
 		

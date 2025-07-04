@@ -15,7 +15,6 @@ public class closeDbResources{
 			try {
                 rs.close();
             } catch (Exception e) {
-                // Log error if needed
                 System.out.println("Error closing resource: " + e);
             }
 		}
@@ -25,8 +24,7 @@ public class closeDbResources{
 			try {
                 con.close();
             } catch (Exception e) {
-                // Log error if needed
-                System.out.println("Error closing resource: " + e);
+                System.out.println("Error =" + e);
             }
 		}
 			
@@ -35,8 +33,7 @@ public class closeDbResources{
 			try {
 	            ps.close();
 	        } catch (Exception e) {
-	            // Log error if needed
-	            System.out.println("Error closing resource: " + e);
+	            System.out.println("Error =" + e);
 	        }
 		}
 	}

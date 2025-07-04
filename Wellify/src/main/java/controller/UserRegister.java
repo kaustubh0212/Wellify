@@ -17,7 +17,7 @@ import domain.patient;
 import serviceimpl.serviceUserImplement;
 
 @WebServlet("/register")
-public class userRegister extends HttpServlet{
+public class UserRegister extends HttpServlet{
 
 	public void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException{
 		

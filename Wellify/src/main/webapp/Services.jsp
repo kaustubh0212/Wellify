@@ -23,7 +23,7 @@
                 </p>
             </div>
             <div class="service-card">
-                <div class="service-icon">&#128104;&#8205;&#127973;</div>
+                <div class="service-icon">&#128104;&#8205;</div>
                 <h2 class="service-name">Consult Specialists</h2>
                 <p class="service-desc">
                     Access a wide network of medical experts in various fields for in-person or online consultations.
@@ -36,22 +36,6 @@
                     Receive and manage your prescriptions securely online, anytime and anywhere.
                 </p>
             </div>
-            <!-- 
-            <div class="service-card">
-                <div class="service-icon">&#128657;</div>
-                <h2 class="service-name">Emergency Support</h2>
-                <p class="service-desc">
-                    Get quick access to emergency care and support when you need it the most.
-                </p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">&#128300;</div>
-                <h2 class="service-name">Health Records</h2>
-                <p class="service-desc">
-                    Store and track your medical history and reports securely in one place.
-                </p>
-            </div>
-            -->
         </div>
     </div>
 </body>

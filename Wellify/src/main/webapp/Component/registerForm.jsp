@@ -1,22 +1,7 @@
-
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-
-<!--
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
-
-
-</body>
-</html>
--->
-
-<!-- register.jsp -->
+	
+	
 <%@include file="allCss.jsp"%>
 <div class="container mt-5" style="max-width: 800px;">
 	<div class="card shadow-lg">
@@ -52,7 +37,6 @@
 			}
 			%>
 
-			<!-- Common Fields -->
 			<form id="regForm"
 				action="${pageContext.request.contextPath}/register" method="POST">
 				<input type="hidden" name="userType" id="userType" value="patient">
@@ -77,7 +61,7 @@
 						name="age" required>
 				</div>
 
-				<!-- Patient Specific Fields -->
+				<!-- Patient Fields -->
 
 				<div id="patientFields">
 					<!--
@@ -89,7 +73,7 @@
 				</div>
 
 
-				<!-- Doctor Specific Fields -->
+				<!-- Doctor Fields -->
 				<div id="doctorFields" style="display: none;">
 					<div class="form-group mb-3">
 						<label>Specialization</label> <select class="form-control"

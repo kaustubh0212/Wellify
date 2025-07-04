@@ -38,7 +38,7 @@
 					patient p = (patient) session.getAttribute("p");
 				%>
 
-				<li class="nav-item active mr-2"><a class="nav-link" href="bookAppointment.jsp">Book Appointment</a></li>
+				<li class="nav-item active mr-2"><a class="nav-link" href="bookAppointmentServletZero">Book Appointment</a></li>
 				<li class="nav-item active mr-2"><a class="nav-link" href="viewAppointment">History</a></li>
 				<li class="nav-item"><a class="btn btn-light text-black" href="logout">Logout</a></li>
 

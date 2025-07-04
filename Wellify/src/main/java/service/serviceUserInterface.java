@@ -19,4 +19,5 @@ public interface serviceUserInterface {
 	public String serviceGetPrescription(int reportId);
 	public boolean serviceCancelAppointment(int AppointmentId);
 	
+	
 }

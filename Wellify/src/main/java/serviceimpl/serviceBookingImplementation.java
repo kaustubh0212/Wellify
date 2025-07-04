@@ -1,5 +1,6 @@
 package serviceimpl;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import daoimpl.daoBookingImplement;
@@ -19,11 +20,19 @@ public class serviceBookingImplementation {
 		return d;
 	}
 
-	public boolean serviceBookAppointment(String disease, int doctorId, int patientId, String time, String date, String symptom, String history)
+	public int serviceBookAppointment(String disease, int doctorId, int patientId, String time, String date, String symptom, String history)
 	{
 		System.out.println("inside serviceBookAppointment()");
 		int val = dbi.daoBookAppointment(disease, doctorId, patientId, time, date, symptom, history);
 		
-		return (val == 1) ? true : false;
+		return val;
+	}
+	
+	public ArrayList<String> serviceFetchDisease()
+	{
+		System.out.println("inside serviceFetchDisease()");
+		daoBookingImplement dbi = new daoBookingImplement();
+		ArrayList<String> a = dbi.daoFetchDisease();
+		return a;
 	}
 }
